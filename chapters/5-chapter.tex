@@ -1,0 +1,19 @@
+% ----------------------------------------------------------
+\chapter{Conclusão}
+% ----------------------------------------------------------
+
+O presente estudo procurou modelar um compressor linear tendo como base um artigo científico disponível na literatura. Buscou-se dividir o modelo nos submodelos elétrico, mecânico e termodinâmico, fazendo implementações individuais e, posteriormente, realizando a sua integração completa. Assim, com resultados do artigo base e resultados do modelo desenvolvido pôde-se fazer uma comparação e uma avaliação entre os dois.
+Durante o desenvolvimento deste trabalho, foram identificados alguns empecilhos e discrepâncias. Por exemplo, alguns parâmetros necessários à simulação não foram fornecidos no artigo de referência e outros apresentaram inconsistência em relação aos resultados apresentados no próprio artigo. Ainda assim, buscou-se uma forma coerente e lógica de resolver cada um desses problemas.
+
+A comparação chave foi o deslocamento do pistão ao longo do tempo, mostrada em cada validação e comparação, visto que, predizer onde o pistão estará é um problema pertinente e não é tão simples como em um compressor alternativo convencional, no qual o movimento é geralmente imposto por um mecanismo biela-manivela. Os resultados de deslocamento do pistão obtidos indicam uma coerência física do modelo desenvolvido, embora algumas melhorias ainda precisam ser implementadas. Uma análise da influência da razão de pressão sobre as potências e eficiências também foi realizada a fim de ilustrar o uso do modelo. Essa análise indicou a existência de um ponto ótimo de eficiência elétrica quando a razão de pressão se aproxima de 3,6, o que é plenamente justificado pelo decaimento brusco da potência elétrica. As razões dessa queda de potência não foram identificadas e permanecem como uma questão a ser verificada no futuro.
+
+Como sugestões para trabalhos futuros, destaca-se:
+\begin{itemize}
+    \item Melhorar a estimativa do coeficiente de fricção;
+    \item Desenvolver uma metodologia para verificar quando a simulação atinge a condição periódica;
+    \item Acoplar os modelos elétrico e mecânico implementados ao modelo termodinâmico de Silva e Dutra (2020);
+    \item Modelar sistemas de controle de movimento de pistão, existentes em compressores lineares reais, a fim de evitar o choque do pistão contra a placa de válvulas mesmo em condições adversas de operação;
+    \item Identificar as razões que levam a potência elétrica a reduzir drasticamente em razões de pressão próximas de 3,6.
+\end{itemize}
+
+Tendo o objetivo de modelar um compressor linear, este trabalho utilizou conceitos de diferentes disciplinas do curso de Engenharia Aeroespacial, como circuitos elétricos, vibrações mecânicas, ciclos termodinâmicos e métodos numéricos de resolução de equações diferenciais, além de toda a capacidade lógica e de análise que um problema de engenharia requer. Em outras palavras, cada etapa de formação foi necessária para este momento.
